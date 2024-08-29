@@ -1,0 +1,64 @@
+:root{
+    --cor-fundo: #000000;
+    --cor-principal: #ffffff17 ;
+    --cor-secundaria: #272727;
+    --cor-destaque: #0a7cff;
+    --cor-texto: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    background-image: url("https://picsum.photos/1920/1080");
+    backdrop-filter: grayscale() saturate(1.5) hue-rotate(20deg) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caixa-principal{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    backdrop-filter: blur(10px);
+    font-size: 1em;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    gap: 2vh;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 8px;
+    margin: 0.5vh;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: #000000;
+}
+
+.caixa-perguntas{
+    padding-bottom: 10px;
+}
